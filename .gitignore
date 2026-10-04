@@ -1,0 +1,41 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+frontend/.env.local
+
+# Python and local runtime files
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+*.egg-info/
+
+# JavaScript dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+*.log
+
+# Local model weights and generated model artifacts
+backend/models/**/pytorch_model.bin
+backend/models/**/*.safetensors
+backend/models/**/*.pt
+backend/models/**/training_args.bin
+
+# Local IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary uploads and generated files
+*.pdf
+*.docx
+!samples/*.pdf
+!samples/*.docx
+tmp/
+temp/
